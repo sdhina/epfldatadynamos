@@ -22,7 +22,6 @@ navbar-links:
   About Us: "aboutme"
   Resources:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
     - Wikispeedia: "https://dlab.epfl.ch/wikispeedia/play/"
 
 ################
@@ -252,7 +251,7 @@ date_format: "%B %-d, %Y"
 
 # Output options (more information on Jekyll's site)
 timezone: "America/Toronto"
-markdown: kramdown
+#markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
 paginate: 5
