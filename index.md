@@ -11,3 +11,7 @@ This will be our introduction.
 
 This will be our text for the first section. 
 {: .text-justify}
+
+## Plot Example
+
+{% include plot.html %}
