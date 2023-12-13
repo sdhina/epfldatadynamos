@@ -14,7 +14,11 @@ This will be our text for the first section.
 
 ## Plot Example
 
+{: .text-justify}
 {% include plot.html %}
+
+This is our first plot.
+{: .text-justify}
 
 ## Next section
 
