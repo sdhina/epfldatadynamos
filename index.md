@@ -15,3 +15,7 @@ This will be our text for the first section.
 ## Plot Example
 
 {% include plot.html %}
+
+## Next section
+
+Test
