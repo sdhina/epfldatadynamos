@@ -41,6 +41,28 @@ The Wikispeedia game is composed of 4604 articles and their metadata from the or
 As players navigate from one article to another they visit articles organized under different categories arbitrarily created by wikipedia to group information and facilitate search. Interestingly, players do not systematically converge to articles on dominant categories! 
 {: .text-justify} 
 
+## Part 2: Network Preferences
+
+Similarly, if article contents might affect how a player reaches his target, the network of articles itself will determine the path the player chooses to his target; to do so, the player can choose articles that have certain network characteristics.
+
+Notably, we look at:
+
+* Degree Centrality: a measure of the importance of a node in a network based on the number of connections (edges) it has.
+* Betweenness Centrality: a measure of the extent to which a node lies on the shortest paths between other nodes in the network. Nodes with high betweenness centrality act as bridges or intermediaries in the network.
+* Closeness Centrality: calculates how close a node is to all other nodes in the network on average. Nodes with higher closeness centrality are more central because they can reach other nodes more quickly.
+* Eigenvector Centrality: assigns importance to a node based on its connections to other important nodes. Nodes connected to other nodes with high eigenvector centrality will also have high centrality scores.
+* Clustering Coefficient: quantifies the likelihood that neighbors of a node are also connected to each other. High clustering coefficients indicate the presence of tightly knit communities or cliques in the network.
+
+{: .text-justify} 
+
+{% include centralities.html %}
+
+Centrality measurements seem to be skewed towards the lower end of their respective distributions showing that fewer nodes have high centrality measurements. However, we should note that the closeness centrality histogram appears to be more uniformly distributed showing a peak in the mid-range centrality values, thereon suggesting that nodes are on average equally distant from one another in the network. Similarly, clustering coefficients follow a slightly less skewed distribution, suggesting some level of tight-knit communities within the network. 
+
+Do you think you would intuitively optimize for any of these measurements to reach your target? 
+
+While evaluating whether a player optimized for any of these measurements out of his free will is beyond the scope of our narrow data oriented minds, we can look at whether or not players tended to choose paths that favored some of the network characteristics over another. 
+
 
 
 
