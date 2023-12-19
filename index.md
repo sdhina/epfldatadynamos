@@ -22,13 +22,14 @@ While explaining why you ended up on this or that page is out of the scope of a 
 In Wikispeedia players start from a source article, and have to reach a target article as fast as they can on a subset of wikipedia. The goal is to race as fast as possible from one article to the next to be the fastest at finding articles on Wikipedia! The paths players take are reported alongside whether or not they reached their target and the time they’ve taken to finish it. As you can see there are more finished paths than not, and trials where the paths were finished were less time-consuming on average.
 
 {: .text-justify}
-
+<p align="center">
+  
 | Finished        | Count           | Average Time played  |
 | ------------- |:-------------:| -----:|
 | Unfinished      | 24874 | 835.25940 |
-| Finished     | centered      |   158.276199 |
+| Finished     | 51323      |   158.276199 |
 
-
+</p>
 ## Plot Example
 
 {: .text-justify}
