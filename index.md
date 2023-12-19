@@ -4,7 +4,11 @@ title: Wiki-Wandering A tale of luck or skill?
 subtitle: Player based optimization of wikipedia for Wikispeedia!
 ---
 
-Through Wikispeedia, a game which tracks user paths from a source to a target article through a reduced Wikipedia dataset, West and Leskovec (2012) explore how humans navigate information networks on platforms like Wikipedia. Most notably, they note that compared to algorithmic shortest path methods, humans tend to use "hub" nodes and leverage content cues to guide their navigation. As such, using this same dataset, we propose to (1) rank the performance of players in order to assess (2) how their success is tied to the content of articles as well as (3) how the interconnections between articles determine the outcome of their attempts relative to category connections proposed by wikipedia. Thus, we study these effects both to gain insight into how Wikipedia's structure shapes player navigation in the context of human search preferences, and to propose potential optimizations for its articles’ organization with regards to Wikispeedia.
+If you’ve ever dived into a wikipedia article, only to emerge 5 articles later with 10 facts unrelated to your search, you know that the digital labyrinth is full of gems and dead-ends. Your initial quest to understand the history of pizza might take you three articles down to the Spanish Wars of Succession as you learn about the House of Savoy and Princess Margarita, the eponym to the three ingredient classic. 
+
+At times navigating wikipedia is a skillful hunt for the right fact, at others it’s a random stroll, gathering and picking the most insightful information. You might be of those who strategically dives through hyperlinks to a specific target seeking for a unique embedded fact, or you might aimlessly skim until a striking concept or unknown word changes your trajectory.
+
+
 {: .text-justify}
 
 ## First section
