@@ -2,6 +2,7 @@
 layout: page
 title: Wiki-Wandering A tale of luck or skill?
 subtitle: Player based optimization of wikipedia for Wikispeedia!
+cover-img: /assets/img/wikispeedia.png
 ---
 
 If you’ve ever dived into a wikipedia article, only to emerge 5 articles later with 10 facts unrelated to your search, you know that the digital labyrinth is full of gems and dead-ends. Your initial quest to understand the history of pizza might take you three articles down to the Spanish Wars of Succession as you learn about the House of Savoy and Princess Margarita, the eponym to the three ingredient classic. 
