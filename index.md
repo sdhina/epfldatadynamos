@@ -29,6 +29,13 @@ In Wikispeedia players start from a source article, and have to reach a target a
 | Finished     | 51323      |   158.276199 |
 
 <table>
+   body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
     <tr>
         <th>Finished</th>
         <th>Count</th>
