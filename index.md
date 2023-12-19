@@ -42,7 +42,7 @@ The Wikispeedia game is composed of 4604 articles and their metadata from the or
 ## Plot Example
 
 {: .text-justify} 
-{% include degree_centrality_plot.html %}
+{% include articles_distribution.html %}
 
 This is our first plot.
 {: .text-justify}
