@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Wiki-Wandering: A tale of luck or skill?
+title: Wiki-Wandering A tale of luck or skill?
 subtitle: Player based optimization of wikipedia for Wikispeedia!
 ---
 
