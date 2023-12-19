@@ -23,11 +23,11 @@ In Wikispeedia players start from a source article, and have to reach a target a
 
 {: .text-justify}
 
-| Tables        | Are           | Cool  |
+| Finished        | Count           | Average Time played  |
 | ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+| Unfinished      | 24874 | 835.25940 |
+| Finished     | centered      |   158.276199 |
+
 
 ## Plot Example
 
