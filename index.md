@@ -22,6 +22,8 @@ While explaining why you ended up on this or that page is out of the scope of a 
 In Wikispeedia players start from a source article, and have to reach a target article as fast as they can on a subset of wikipedia. The goal is to race as fast as possible from one article to the next to be the fastest at finding articles on Wikipedia! The paths players take are reported alongside whether or not they reached their target and the time they’ve taken to finish it. As you can see there are more finished paths than not, and trials where the paths were finished were less time-consuming on average.
 
 {: .text-justify}
+
+{: .text-center}
   
 | Finished        | Count           | Average Time played  |
 | ------------- |:-------------:| -----:|
@@ -29,7 +31,7 @@ In Wikispeedia players start from a source article, and have to reach a target a
 | Finished     | 51323      |   158.276199 |
 
       
-{: .text-center}
+
 
 
 The Wikispeedia game is composed of 4604 articles and their metadata from the original Wikipedia, including article categories, content and linking relations. The articles range from Alexander the Great to the United States and are layered inside of categories ranging from countries to famous people:
