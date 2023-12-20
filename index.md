@@ -41,7 +41,18 @@ The Wikispeedia game is composed of 4604 articles and their metadata from the or
 As players navigate from one article to another they visit articles organized under different categories arbitrarily created by wikipedia to group information and facilitate search. Interestingly, players do not systematically converge to articles on dominant categories! 
 {: .text-justify} 
 
-## Part 2: Network Preferences
+## Let us tell you about how you hunt for articles 
+### Part 1- Article Preferences
+If you were scrambling from one article to the next, would you head to the links at the top of the article or at the bottom? This is the first kind of question we want to ask to see if players have particular trends and strategies they follow. We look at article content features that could affect the way a player interacts with the content of an article:
+
+* The ratio of input to output links
+* The length of each article
+* The position of links within the articles
+* The level of the category 
+
+
+
+### Part 2: Network Preferences
 
 Similarly, if article contents might affect how a player reaches his target, the network of articles itself will determine the path the player chooses to his target; to do so, the player can choose articles that have certain network characteristics.
 
