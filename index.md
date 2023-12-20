@@ -62,6 +62,14 @@ If you were scrambling from one article to the next, would you head to the links
 Articles vary substantially in their length, tending linearly towards shorter lengths; it follows that there are more hyperlinks within the first thousand words from the top of articles. Moreover, articles tend to have more links going towards them than leaving them, hinting at unequal clustering across the network. 
 But how about you, would you blindly click at the top of a page or strategically pick links embedded at the bottom? 
 
+{% include average_pos.html %}
+
+Here we observe that players that got to their target quicker tended to find links deeper in articles compared to players that took longer to finish their path. Similarly, players that completed their path and found their target also seemed to seek hyperlinks deeper in their articles. Patience pays in Wikispeedia!
+
+We could also look at these differences for player’s tendencies to click on longer VS shorter articles or on articles with more or less output links, but given that these are purely naïve observations of potentially independent trends we will look at another way to evaluate each article’s interactions with players in a method later… 
+
+First, let's look a little bit beyond individual articles and consider them as a network, the whole is always more than the sum of its parts after all! 
+
 
 ### Part 2: Network Preferences
 
