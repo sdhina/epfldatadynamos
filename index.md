@@ -57,7 +57,7 @@ If you were scrambling from one article to the next, would you head to the links
 * The position of links within the articles
 * The level of the category 
 
-
+{% include preferences.html %}
 
 ### Part 2: Network Preferences
 
