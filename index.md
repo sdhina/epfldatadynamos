@@ -41,6 +41,13 @@ The Wikispeedia game is composed of 4604 articles and their metadata from the or
 As players navigate from one article to another they visit articles organized under different categories arbitrarily created by wikipedia to group information and facilitate search. Interestingly, players do not systematically converge to articles on dominant categories! 
 {: .text-justify} 
 
+{% include pie_chart.html %}
+
+If source and target articles were distributed proportionally to their category dominance (which they are in Wikispeedia), you’d think that players converged to articles in more dominant categories, but here “geography” substantially dominates over “science” and categories like “people” did not even make it into the top 100 articles visited!
+
+Who is the culprit for this dissonance? Is Wikipedia scheming to teach you about geography or do players simply have strategies that boycott looking up famous People? 
+
+
 ## Let us tell you about how you hunt for articles 
 ### Part 1- Article Preferences
 If you were scrambling from one article to the next, would you head to the links at the top of the article or at the bottom? This is the first kind of question we want to ask to see if players have particular trends and strategies they follow. We look at article content features that could affect the way a player interacts with the content of an article:
