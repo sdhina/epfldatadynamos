@@ -147,6 +147,13 @@ But perhaps the centrality of the articles they gravitate towards will tell us s
 
 
 ### Part2 - What the network says
+We carry out a similar model looking at whether or not having more of one type of hub centrality in one’s path affects a player’s run time for completed paths only. We take the ratio of hubs in a path to the number of articles in a path as a variable here. We use a ratio because if a player finishes his path quicker and consistently uses degree centrality as his strategy, then he might consistently have much fewer hubs than other players; counting hubs here would not be very fair to players with better strategies! 
+
+{% include heatmap.html %}
+
+Here we look at individual interactions of hub centralities with whether or not players finished and control for path lengths. With all p-values lower than 0.001, all our interactions are significant, and we notice that optimizing for closeness gives the highest chance of completing one’s path.
+
+
 
 ### Part3 - The player's fault or Wikipeedia's ?
 
