@@ -57,7 +57,7 @@ If you were scrambling from one article to the next, would you head to the links
 * The position of links within the articles
 * The level of the category 
 
-{% include preferences.html %}
+{% include pref_update.html %}
 
 Articles vary substantially in their length, tending linearly towards shorter lengths; it follows that there are more hyperlinks within the first thousand words from the top of articles. Moreover, articles tend to have more links going towards them than leaving them, hinting at unequal clustering across the network. 
 But how about you, would you blindly click at the top of a page or strategically pick links embedded at the bottom? 
