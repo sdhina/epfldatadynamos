@@ -134,6 +134,18 @@ In our case, we can investigate how various features of articles— their length
 
 Furthermore, because we have two things we want to understand—whether people complete the navigation and how fast they do it—we build two separate models. This is like having two different lenses to examine our case: one to see if our clues lead to solving the case (completion), and another to see how fast we can get there (speed).
 
+{% include pvalues.html %}
+
+The way we determine the significance of our article features with regards to whether they affect the average duration of a run and its completion is through p-values - a low p-value (p < 0.05) means you should be surprised by your experiment because your results aren’t occurring by random chance!
+
+At first glance the article’s length, its average input output link ratio and the position of hyperlinks within  them all seem to significantly affect both the average duration of player runs as well as whether or not the runs were completed (except for the average position in the case of completion where p = 0.764). However, for both of these models, we note very low r-squared values (0.002 for feature effects on completion and 0.001 for feature effects on average duration of a run), a statistical measure of how much variance can be explained by the features we are evaluating; in other words, our first test is rather inconclusive… 
+
+The lengths, position of hyperlinks and ratio of input/output links of articles chosen are not very useful in explaining why a player is good and efficient at playing Wikispeedia.
+
+But perhaps the centrality of the articles they gravitate towards will tell us something interesting about their Wikispeedia skills? 
+
+
+
 ### Part2 - What the network says
 
 ### Part3 - The player's fault or Wikipeedia's ?
