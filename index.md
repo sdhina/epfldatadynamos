@@ -120,6 +120,8 @@ When looking at within category centrality measurements, we see that the average
 
 In other words, given these measures, it sounds like it would hypothetically be easier for players to move from a source to a target within a category than between categories no? 
 
+**But how do we verify all these interactions? How do we quantify their strength and what if they influence one another?**
+
 
 ## Finding information on wikipedia: a game of strategy, good architecture or mere luck?
 ### Part1 - What the articles say 
