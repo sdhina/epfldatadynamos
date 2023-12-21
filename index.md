@@ -172,6 +172,26 @@ If we look at the influence of categories (assigned by the curators) alone, we f
 
 However, using multivariate models, the categories do not matter much in themselves. Similar amount of variance can be explained by the percentage of closeness hubs in the path and the optimal path length (shortest_path) with or without including the fact that the source and target articles are in the same category. While r-squares in all models are relatively low and the models are restricted to a simple linear one, they give statistically significant estimated coefficients for players’ hub strategy and the optimal path length.
 
+**So do we have a conclusion?**
+
+We’ve spread ourselves far and large across Wikipedia features and statistical techniques to try and understand if player choices and wikipedia’s organization had anything to do at all with how they could target information on Wikipedia.
+
+Here’s what we saw:
+* Articles: tend to have more inputs than outputs, be shorter, and have most of their links towards the top, and players that choose to go deeper into articles tend to do better than average.
+* Network Characteristics: centrality measurements show that few articles have high centralities except for closeness which is more uniformly distributed. Players seem to opt for higher centrality measurements and more so still for closeness centrality.
+* Categories: categories are denser and better clustered than the general network.
+
+Here’s what we tested:
+* Articles: article length and the input/ouptut ratio of articles on a player’s path both affect the path’s completion while all of length, position of links and input/output ratio of articles affect path duration for completed paths.
+* Network Characteristics: all types of hub centrality measurements affect path completion and average duration of runs with closeness centrality affecting performance the most.
+* Categories: categories have very little effect on the performance of players and are only more effective when the path between source and target within them is short; this is a random effect of Wikipedia’s organization.
+
+However, we found low r-squared values for all of our tests, meaning that the features we looked at are only a very small reason why player’s did well. In other words, after all of this, we’re almost back at square one, with no real good reason to explain why some players are better than others at Wikispeedia and no good suggestions to improve Wikipedia really either…
+
+Perhaps we’ve neglected secrets to Wikipedia’s architecture that facilitate Wikispeeding. Or maybe there are other skills to this dark-art that Wikispeeders are still coveting. In any case, finding target articles in Wikispeedia seems to be explained greatly by random characteristics of its network such as the shortest paths between randomly selected source and target articles.
+
+All to say, that Wikispeedia remains a game that doesn’t fully reflect how you probably use Wikipedia everyday, you’re probably a lot more random than anything we studied here! 
+
 
 
 
