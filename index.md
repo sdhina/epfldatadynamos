@@ -64,11 +64,12 @@ But how about you, would you blindly click at the top of a page or strategically
 
 {% include average_pos.html %}
 
-Here we observe that players that got to their target quicker tended to find links deeper in articles compared to players that took longer to finish their path. Similarly, players that completed their path and found their target also seemed to seek hyperlinks deeper in their articles. Patience pays in Wikispeedia!
+Here we observe that players that got to their target quicker tended to find links deeper in articles compared to players that took longer to finish their path. Similarly, players that completed their path and found their target also seemed to seek hyperlinks deeper in their articles. Patience pays in Wikispeedia! 
 
-We could also look at these differences for player’s tendencies to click on longer VS shorter articles or on articles with more or less output links, but given that these are purely naïve observations of potentially independent trends we will look at another way to evaluate each article’s interactions with players in a method later… 
+We could also look at these differences for player’s tendencies to click on longer VS shorter articles or on articles with more or less output links, but given that these are purely naïve observations of potentially independent trends we will look at another way to evaluate each article’s interactions with players in a later method… 
 
 First, let's look a little bit beyond individual articles and consider them as a network, the whole is always more than the sum of its parts after all! 
+
 
 
 ### Part 2: Network Preferences
@@ -94,7 +95,7 @@ Do you think you would intuitively optimize for any of these measurements to rea
 While evaluating whether a player optimized for any of these measurements out of his free will is beyond the scope of our narrow data oriented minds, we can look at whether or not players tended to choose paths that favored some of the network characteristics over another. 
 
 Overall, the centrality distribution of all articles the players go through in the game is similar to the distribution of the distribution of all articles. 
-However, we also see that the most frequented nodes (or hubs) by players have higher centrality values on average, as expected. That stands true whether the game is finished or not, though hubs in finished paths have slightly higher average centrality measures. It thus seems like the players are following some logical paths in the Wikipedia network and actively seek to find hubs.
+However, we also see that the most frequented nodes (or hubs) by players have higher centrality values on average, as expected (and even more so for closeness centrality). That stands true whether the game is finished or not, though hubs in finished paths have slightly higher average centrality measures. It thus seems like the players are following some logical paths in the Wikipedia network and actively seek to find hubs.
 
 
 {% include centrality_test.html %}
