@@ -93,7 +93,16 @@ Do you think you would intuitively optimize for any of these measurements to rea
 
 While evaluating whether a player optimized for any of these measurements out of his free will is beyond the scope of our narrow data oriented minds, we can look at whether or not players tended to choose paths that favored some of the network characteristics over another. 
 
+Overall, the centrality distribution of all articles the players go through in the game is similar to the distribution of the distribution of all articles. 
+However, we also see that the most frequented nodes (or hubs) by players have higher centrality values on average, as expected. That stands true whether the game is finished or not, though hubs in finished paths have slightly higher average centrality measures. It thus seems like the players are following some logical paths in the Wikipedia network and actively seek to find hubs.
 
+
+{% include centrality.html %}
+
+What does this mean? 
+Are players randomly picking nodes regardless of how central they are to their network? Or is wikipedia well optimized that players are following paths that match Wikipedia’s network?!
+
+If we really want to see how wikipedia’s architecture might be influencing our players, it might be more interesting to look at whether Wikipedia’s category organization could have any influence on these network characteristics:
 
 
 
