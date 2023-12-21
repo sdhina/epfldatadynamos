@@ -98,15 +98,14 @@ Overall, the centrality distribution of all articles the players go through in t
 However, we also see that the most frequented nodes (or hubs) by players have higher centrality values on average, as expected (and even more so for closeness centrality). That stands true whether the game is finished or not, though hubs in finished paths have slightly higher average centrality measures. It thus seems like the players are following some logical paths in the Wikipedia network and actively seek to find hubs.
 
 
-{% include centrality_test.html %}
+{% include centrality_test_update.html %}
 
-What does this mean? 
-Are players randomly picking nodes regardless of how central they are to their network? Or is wikipedia well optimized that players are following paths that match Wikipedia’s network?!
+
 
 ### Part 3 - Wikipedia Category Preferences
 
 
-If we really want to see how wikipedia’s architecture might be influencing our players, it might be more interesting to look at whether Wikipedia’s category organization could have any influence on these network characteristics:
+However, we really want to see how wikipedia’s architecture might be influencing our players, it might be more interesting to look at whether Wikipedia’s category organization could have any influence on these network characteristics:
 
 {% include nodes_edges.html %}
 
@@ -122,6 +121,8 @@ When looking at within category centrality measurements, we see that the average
 In other words, given these measures, it sounds like it would hypothetically be easier for players to move from a source to a target within a category than between categories no? 
 
 **But how do we verify all these interactions? How do we quantify their strength and what if they influence one another?**
+
+Enter Regression...
 
 
 ## Finding information on wikipedia: a game of strategy, good architecture or mere luck?
