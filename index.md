@@ -102,19 +102,24 @@ However, we also see that the most frequented nodes (or hubs) by players have hi
 What does this mean? 
 Are players randomly picking nodes regardless of how central they are to their network? Or is wikipedia well optimized that players are following paths that match Wikipedia’s network?!
 
+### Part 3 - Wikipedia Category Preferences
+
+
 If we really want to see how wikipedia’s architecture might be influencing our players, it might be more interesting to look at whether Wikipedia’s category organization could have any influence on these network characteristics:
 
-{% include overall.html %}
+{% include nodes_edges.html %}
 
-We see that, within each category, the average degree is lower (which is reasonable since intercategory-links are excluded). On the other hand, the density and clustering coefficients are mostly higher within each category. This suggests that articles within the same category are more interconnected, forming closer networks compared to the overall Wikipedia link network.
+We look at the total number of categories (nodes) in each category as well as the number of connections between them (Edges)
 
-We then look into the optimal paths. The average shortest-path length (SPL) in the overall network is 3.2. Within each category, the average SPL ranges from 3.03 to 3.29, with a mean of 3.18 and a median of 3.16. The SPLs in each category are analyzed using ANOVA with a statistically significant result, i.e., the variability between category means is larger than the variability of the observations within the categories.
+{% include clust_density.html %}
 
-These results indicate that the existing categorization does form reasonable clusters that group articles which are more closely related, although without an alternative comparison, it is hard to conclude how “good” the clustering is.
 
-While it seems that article content and network characteristics could be influencing our player’s success, it’s starting to get hard to keep track of what’s affecting what, and how effective it is at doing so! We need a more diligent method to move forward,
+We then look at density, a ratio of the number of connections in a category with regards to the number of possible connections in that category, as well as clustering (as previously explained).
 
-Enter Regression…
+When looking at within category centrality measurements, we see that the average degree is lower than the rest of our network’s, a reasonable finding given inter-category links are excluded. On the other hand, the density and clustering coefficients are mostly higher within each category. This suggests that articles within the same category are more interconnected compared to the overall Wikipedia link network.
+
+In other words, given these measures, it sounds like it would hypothetically be easier for players to move from a source to a target within a category than between categories no? 
+
 
 ## Finding information on wikipedia: a game of strategy, good architecture or mere luck?
 ### Part1 - What the articles say 
