@@ -172,6 +172,15 @@ If we look at the influence of categories (assigned by the curators) alone, we f
 
 However, using multivariate models, the categories do not matter much in themselves. Similar amount of variance can be explained by the percentage of closeness hubs in the path and the optimal path length (shortest_path) with or without including the fact that the source and target articles are in the same category. While r-squares in all models are relatively low and the models are restricted to a simple linear one, they give statistically significant estimated coefficients for players’ hub strategy and the optimal path length.
 
+{% include table1.html %}
+{% include table2.html %}
+
+
+If we look further into the effect of whether to include hub percentages in the model, we find that it contributes less than the optimal path. In our limited linear model, we see that Wikipedia links are relatively well organized and contribute to players’ success, whereas the skill or strategy of the player has a minor but significant impact.
+{% include table3.html %}
+
+
+
 **So do we have a conclusion?**
 
 We’ve spread ourselves far and large across Wikipedia features and statistical techniques to try and understand if player choices and wikipedia’s organization had anything to do at all with how they could target information on Wikipedia.
