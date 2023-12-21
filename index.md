@@ -134,6 +134,8 @@ Furthermore, because we have two things we want to understand—whether people c
 We look at how existing categories may affect players’ performance. The categories indeed reflect some of the same thinking by players, as it significantly affects players’ performance. We notice a 7% increase in the chance of completion when the source and target articles are in the same category. Furthermore, players rate the game as less difficult (0.2 points on average on a 1-to-5 scale) and complete the game in a shorter time (~35 sec on average) when the target is in the same category as the source.
 
 
+{% include centering_test.html %}
+
 
 
 
