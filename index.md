@@ -85,7 +85,7 @@ Notably, we look at:
 
 {: .text-justify} 
 
-{% include centralities.html %}
+{% include new_centralities.html %}
 
 Centrality measurements seem to be skewed towards the lower end of their respective distributions showing that fewer nodes have high centrality measurements. However, we should note that the closeness centrality histogram appears to be more uniformly distributed showing a peak in the mid-range centrality values, thereon suggesting that nodes are on average equally distant from one another in the network. Similarly, clustering coefficients follow a slightly less skewed distribution, suggesting some level of tight-knit communities within the network. 
 
