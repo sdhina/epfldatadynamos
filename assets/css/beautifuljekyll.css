@@ -25,6 +25,10 @@ body {
   display: flex;
   flex-direction: column;*/
 }
+
+body > main {
+  overflow-x: hidden;
+}
 /*
 body > main {
   flex: 1;
