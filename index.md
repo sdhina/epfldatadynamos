@@ -151,17 +151,27 @@ But perhaps the centrality of the articles they gravitate towards will tell us s
 ### Part2 - What the network says
 We carry out a similar model looking at whether or not having more of one type of hub centrality in one’s path affects a player’s run time for completed paths only. We take the ratio of hubs in a path to the number of articles in a path as a variable here. We use a ratio because if a player finishes his path quicker and consistently uses degree centrality as his strategy, then he might consistently have much fewer hubs than other players; counting hubs here would not be very fair to players with better strategies! 
 
-{% include heatmap.html %}
+{% include heatmap_update.html %}
 
-Here we look at individual interactions of hub centralities with whether or not players finished and control for path lengths. With all p-values lower than 0.001, all our interactions are significant, and we notice that optimizing for closeness gives the highest chance of completing one’s path.
+Similarly, here we look at individual interactions of hub centralities with regards to average duration of a path and control for path lengths. With all the p-values also inferior to 0.001, all interactions are significant with closeness centrality rendering much lower average path durations for completed paths! 
+
+In other words, picking the nodes that are “closest” to all other nodes on Wikispeedia seems to be a slightly better strategy than picking hubs defined by other kinds of centrality. 
+
+Nevertheless, the r-squared for this model is still rather low with 0.026 for closeness related to completion and 0.022 for closeness related to average duration (the others are inferior to 0.01) meaning the centrality of the nodes picked are still not very good at explaining why a player is fast at solving his Wikispeedia task.
+
+We still haven't found a good way to explain why players score better on Wikispeedia… but let us try one last statistical trick to relate category data with player performances. Will we finally be able to elucidate if Wikipedia’s architecture or player strategies best explain good Wikispeedia performances? 
+
 
 
 
 ### Part3 - The player's fault or Wikipeedia's ?
 
+We now look at how players' performance may be influenced by the nature of the source and target articles (whether they are in the same category and the optimal shortest path between the two) and by the players’ choice of the path.
 
+If we look at the influence of categories (assigned by the curators) alone, we find using a linear regression an estimated 7% increase in the chance of completion when the source and target articles are in the same main category. Furthermore, players complete the game in a shorter time (~35 sec on average) when the target is in the same category as the source.
 
-We look at how existing categories may affect players’ performance. The categories indeed reflect some of the same thinking by players, as it significantly affects players’ performance. We notice a 7% increase in the chance of completion when the source and target articles are in the same category. Furthermore, players rate the game as less difficult (0.2 points on average on a 1-to-5 scale) and complete the game in a shorter time (~35 sec on average) when the target is in the same category as the source.
+However, using multivariate models, the categories do not matter much in themselves. Similar amount of variance can be explained by the percentage of closeness hubs in the path and the optimal path length (shortest_path) with or without including the fact that the source and target articles are in the same category. While r-squares in all models are relatively low and the models are restricted to a simple linear one, they give statistically significant estimated coefficients for players’ hub strategy and the optimal path length.
+
 
 
 
