@@ -97,7 +97,7 @@ Overall, the centrality distribution of all articles the players go through in t
 However, we also see that the most frequented nodes (or hubs) by players have higher centrality values on average, as expected. That stands true whether the game is finished or not, though hubs in finished paths have slightly higher average centrality measures. It thus seems like the players are following some logical paths in the Wikipedia network and actively seek to find hubs.
 
 
-{% include centrality.html %}
+{% include centrality_test.html %}
 
 What does this mean? 
 Are players randomly picking nodes regardless of how central they are to their network? Or is wikipedia well optimized that players are following paths that match Wikipedia’s network?!
@@ -131,7 +131,6 @@ Furthermore, because we have two things we want to understand—whether people c
 
 ### Part3 - The player's fault or Wikipeedia's ?
 
-{% include centrality_test.html %}
 
 
 We look at how existing categories may affect players’ performance. The categories indeed reflect some of the same thinking by players, as it significantly affects players’ performance. We notice a 7% increase in the chance of completion when the source and target articles are in the same category. Furthermore, players rate the game as less difficult (0.2 points on average on a 1-to-5 scale) and complete the game in a shorter time (~35 sec on average) when the target is in the same category as the source.
