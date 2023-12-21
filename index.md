@@ -104,6 +104,37 @@ Are players randomly picking nodes regardless of how central they are to their n
 
 If we really want to see how wikipedia’s architecture might be influencing our players, it might be more interesting to look at whether Wikipedia’s category organization could have any influence on these network characteristics:
 
+{% include overall.html %}
+
+We see that, within each category, the average degree is lower (which is reasonable since intercategory-links are excluded). On the other hand, the density and clustering coefficients are mostly higher within each category. This suggests that articles within the same category are more interconnected, forming closer networks compared to the overall Wikipedia link network.
+
+We then look into the optimal paths. The average shortest-path length (SPL) in the overall network is 3.2. Within each category, the average SPL ranges from 3.03 to 3.29, with a mean of 3.18 and a median of 3.16. The SPLs in each category are analyzed using ANOVA with a statistically significant result, i.e., the variability between category means is larger than the variability of the observations within the categories.
+
+These results indicate that the existing categorization does form reasonable clusters that group articles which are more closely related, although without an alternative comparison, it is hard to conclude how “good” the clustering is.
+
+While it seems that article content and network characteristics could be influencing our player’s success, it’s starting to get hard to keep track of what’s affecting what, and how effective it is at doing so! We need a more diligent method to move forward,
+
+Enter Regression…
+
+## Finding information on wikipedia: a game of strategy, good architecture or mere luck?
+### Part1 - What the articles say 
+
+Simply observing player behavior on Wikispeedia has led to a few intriguing results so far, but we still have little insight on whether winners of Wikipedia are simply skilled at finding information, whether Wikipedia is simply well built for human wayfinding or if a player’s results are simply random.
+
+Here we need to introduce regression models which will allow us to move beyond just describing patterns in data to actually understanding the relationships between different factors. Imagine you're a detective trying to figure out what influences the outcome of a case. You could simply observe and note down what you see, which is akin to the observational analysis we’ve done so far. However, if you want to get to the bottom of how different clues or factors interplay to affect the outcome, you need a more sophisticated approach—this is where regression models come into play.
+
+In our case, we can investigate how various features of articles— their length, the position of links within them, or the ratio of their inbound to outbound links—affect how easily and quickly people navigate through them. A simple observational study might show you that longer articles tend to be harder to navigate, but is that the whole story? A regression model allows to see if there is more than one factor at play, it's like having the ability to hold certain factors steady while we look at the influence of others; in other words, we can see if the article length still makes navigation difficult when we control for the position of the links and the ratio of inbound/outbound links - an assessment which is more informative than simple observations, which can tell us what happened, but not necessarily why or what might happen in the future.
+
+Furthermore, because we have two things we want to understand—whether people complete the navigation and how fast they do it—we build two separate models. This is like having two different lenses to examine our case: one to see if our clues lead to solving the case (completion), and another to see how fast we can get there (speed).
+
+### Part2 - What the network says
+
+### Part3 - The player's fault or Wikipeedia's ?
+
+We look at how existing categories may affect players’ performance. The categories indeed reflect some of the same thinking by players, as it significantly affects players’ performance. We notice a 7% increase in the chance of completion when the source and target articles are in the same category. Furthermore, players rate the game as less difficult (0.2 points on average on a 1-to-5 scale) and complete the game in a shorter time (~35 sec on average) when the target is in the same category as the source.
+
+
+
 
 
 
