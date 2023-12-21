@@ -21,9 +21,9 @@ body {
   background-attachment: fixed;
   {% endif %}
   overflow-wrap: break-word;
-  min-height: 100vh;
+  /*min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: column;*/
 }
 body > main {
   flex: 1;
