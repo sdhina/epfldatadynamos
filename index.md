@@ -168,11 +168,18 @@ We still haven't found a good way to explain why players score better on Wikispe
 
 We now look at how players' performance may be influenced by the nature of the source and target articles (whether they are in the same category and the optimal shortest path between the two) and by the players’ choice of the path.
 
-If we look at the influence of categories (assigned by the curators) alone, we find using a linear regression an estimated 7% increase in the chance of completion when the source and target articles are in the same main category. Furthermore, players complete the game in a shorter time (~35 sec on average) when the target is in the same category as the source.
+If we look at the influence of categories (assigned by Wikipedia’s creators) alone, we find an estimated 7% increase in the chance of completion when the source and target articles are in the same category (using a linear regression). Moreover, players complete the game in a shorter time (~35 sec on average) when the target is in the same category as the source.
 
-However, using multivariate models, the categories do not matter much in themselves. Similar amount of variance can be explained by the percentage of closeness hubs in the path and the optimal path length (shortest_path) with or without including the fact that the source and target articles are in the same category. While r-squares in all models are relatively low and the models are restricted to a simple linear one, they give statistically significant estimated coefficients for players’ hub strategy and the optimal path length.
+However, this might not be the full story, because if paths in the same category tend to be shorter than paths that run through several categories (because categories are denser), then the increased performance observed when looking at paths which have their source and target in the same category may be do to a random effect - the shortest path between a source and its target. 
 
+To assess this, we introduce a mixed effects models, which are interpreted like linear regressions only this time we have a random effect (shortest path) to control for the influence of categories on performance. 
 
+More precisely, we add the shortest path variable to a model looking at the effect of closeness hubs in cases where the source and target are in the same category, or not in the same category, on both completion and average duration. Note that the closeness hubs in path variables is defined as a percentage of closeness hubs across nodes in a player path.
+
+Unfortunately we discover that the categories do not matter much... We find that the percentage of closeness hubs in the path, and the shortest path length explain a similar amount of variance with or without the category variable. Moreover, both the closeness hub strategy and the shortest path strategy show significant effects on the player’s performance. However, like our other model, our r-squared remains low.”
+
+Perhaps we’ve neglected secrets to Wikipedia’s architecture that facilitate Wikispeeding. Or maybe there are other skills to this dark-art that Wikispeeders are still coveting. In any case, finding target articles in Wikispeedia seems to be explained greatly by random characteristics of its network such as the shortest paths between randomly selected source and target articles.
+=>  Perhaps we’ve neglected secrets to Wikipedia’s architecture that facilitate Wikispeeding. Or maybe there are other skills to this dark-art that Wikispeeders are still coveting. In any case, wayfinding in Wikispeedia seems like it could be influenced by many random characteristics of Wikipedia’s network such as the shortest paths between selected source and target articles. 
 {% include table1.html %}
 {% include table2.html %}
 
