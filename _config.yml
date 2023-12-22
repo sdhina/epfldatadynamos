@@ -12,14 +12,14 @@
 # Name of website
 title: EPFLDataDynamos
 # Your name to show in the footer
-author: EPFL Data Dynamos
+author: Tong Zhang, Matthew Morvan, Marie Lou Hirschy, Enes Demirtas, Sara Dhina
 
 ###############################################
 # --- List of links in the navigation bar --- #
 ###############################################
 
 navbar-links:
-  About Us: "aboutme"
+  #About Us: "aboutme"
   Resources:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Wikispeedia: "https://dlab.epfl.ch/wikispeedia/play/"
