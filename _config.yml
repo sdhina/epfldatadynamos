@@ -21,8 +21,9 @@ author: Tong Zhang, Matthew Morvan, Marie Lou Hirschy, Enes Demirtas, Sara Dhina
 navbar-links:
   #About Us: "aboutme"
   Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Wikispeedia: "https://dlab.epfl.ch/wikispeedia/play/"
+    - Beautiful Jekyll: "https://beautifuljekyll.com"
+    
 
 ################
 # --- Logo --- #
