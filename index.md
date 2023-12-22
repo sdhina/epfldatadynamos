@@ -35,7 +35,7 @@ In Wikispeedia players start from a source article, and have to reach a target a
 
 
 
-The Wikispeedia game is composed of 4604 articles and their metadata from the original Wikipedia, including article categories, content and linking relations. The articles range from Alexander the Great to the United States and are layered inside of categories ranging from countries to famous people:
+The Wikispeedia game is composed of 4604 articles and their metadata from the original Wikipedia, including article categories, content and linking relations. The articles range from Alexander the Great to the United States and are layered inside of categories ranging from countries to people:
 {% include articles_distribution.html %}
 
 As players navigate from one article to another they visit articles organized under different categories arbitrarily created by wikipedia to group information and facilitate search. Interestingly, players do not systematically converge to articles on dominant categories! 
@@ -45,7 +45,7 @@ As players navigate from one article to another they visit articles organized un
 
 If source and target articles were distributed proportionally to their category dominance (which they are in Wikispeedia), you’d think that players converged to articles in more dominant categories, but here “geography” substantially dominates over “science” and categories like “people” did not even make it into the top 100 articles visited!
 
-Who is the culprit for this dissonance? Is Wikipedia scheming to teach you about geography or do players simply have strategies that boycott looking up famous People? 
+Who is the culprit for this dissonance? Is Wikipedia scheming to teach you about geography or do players simply have strategies that boycott looking up famous people? 
 
 
 ## Let us tell you about how you hunt for articles 
