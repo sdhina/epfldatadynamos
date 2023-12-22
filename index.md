@@ -171,6 +171,9 @@ We now look at how players' performance may be influenced by the nature of the s
 If we look at the influence of categories (assigned by the curators) alone, we find using a linear regression an estimated 7% increase in the chance of completion when the source and target articles are in the same main category. Furthermore, players complete the game in a shorter time (~35 sec on average) when the target is in the same category as the source.
 
 However, using multivariate models, the categories do not matter much in themselves. Similar amount of variance can be explained by the percentage of closeness hubs in the path and the optimal path length (shortest_path) with or without including the fact that the source and target articles are in the same category. While r-squares in all models are relatively low and the models are restricted to a simple linear one, they give statistically significant estimated coefficients for players’ hub strategy and the optimal path length.
+<p align="center">
+<img src="assets/img/table1_pic.png" alt="No"/>
+</p>
 
 {% include table1.html %}
 {% include table2.html %}
