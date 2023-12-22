@@ -24,17 +24,7 @@ In Wikispeedia players start from a source article, and have to reach a target a
 
 {: .text-justify}
 
-{: .text-center}
-<div align="center">
-  
-| Finished        | Count           | Average Time played  |
-| ------------- |:-------------:| -----:|
-| Unfinished      | 24874 | 835.25940 |
-| Finished     | 51323      |   158.276199 |
-</div>
-      
-
-
+{% include table0.html %}
 
 The Wikispeedia game is composed of 4604 articles and their metadata from the original Wikipedia, including article categories, content and linking relations. The articles range from Alexander the Great to the United States and are layered inside of categories ranging from countries to people:
 {% include articles_distribution.html %}
