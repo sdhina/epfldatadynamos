@@ -25,12 +25,13 @@ In Wikispeedia players start from a source article, and have to reach a target a
 {: .text-justify}
 
 {: .text-center}
+<div align="center">
   
 | Finished        | Count           | Average Time played  |
 | ------------- |:-------------:| -----:|
 | Unfinished      | 24874 | 835.25940 |
 | Finished     | 51323      |   158.276199 |
-
+</div>
       
 
 
