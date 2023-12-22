@@ -182,8 +182,7 @@ More precisely, we add the shortest path variable to a model looking at the effe
 
 Unfortunately we discover that the categories do not matter much... We find that the percentage of closeness hubs in the path, and the shortest path length explain a similar amount of variance with or without the category variable. Moreover, both the closeness hub strategy and the shortest path strategy show significant effects on the player’s performance. However, like our other model, our r-squared remains low.”
 
-Perhaps we’ve neglected secrets to Wikipedia’s architecture that facilitate Wikispeeding. Or maybe there are other skills to this dark-art that Wikispeeders are still coveting. In any case, finding target articles in Wikispeedia seems to be explained greatly by random characteristics of its network such as the shortest paths between randomly selected source and target articles.
-=>  Perhaps we’ve neglected secrets to Wikipedia’s architecture that facilitate Wikispeeding. Or maybe there are other skills to this dark-art that Wikispeeders are still coveting. In any case, wayfinding in Wikispeedia seems like it could be influenced by many random characteristics of Wikipedia’s network such as the shortest paths between selected source and target articles. 
+* Perhaps we’ve neglected secrets to Wikipedia’s architecture that facilitate Wikispeeding. Or maybe there are other skills to this dark-art that Wikispeeders are still coveting. In any case, wayfinding in Wikispeedia seems like it could be influenced by many random characteristics of Wikipedia’s network such as the shortest paths between selected source and target articles. 
 {% include table1.html %}
 {% include table2.html %}
 
