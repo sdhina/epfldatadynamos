@@ -55,7 +55,7 @@ If you were scrambling from one article to the next, would you head to the links
 * The ratio of input to output links
 * The length of each article
 * The position of links within the articles
-* The level of the category 
+* The category they are part of
 
 {% include pref_update.html %}
 
@@ -81,7 +81,7 @@ Notably, we look at:
 * Degree Centrality: a measure of the importance of a node in a network based on the number of connections (edges) it has.
 * Betweenness Centrality: a measure of the extent to which a node lies on the shortest paths between other nodes in the network. Nodes with high betweenness centrality act as bridges or intermediaries in the network.
 * Closeness Centrality: calculates how close a node is to all other nodes in the network on average. Nodes with higher closeness centrality are more central because they can reach other nodes more quickly.
-* Eigenvector Centrality: assigns importance to a node based on its connections to other important nodes. Nodes connected to other nodes with high eigenvector centrality will also have high centrality scores.
+* Eigenvector Centrality: like degree centrality, considers the number of edges it has, as well as the number of edges its neighbors have…
 * Clustering Coefficient: quantifies the likelihood that neighbors of a node are also connected to each other. High clustering coefficients indicate the presence of tightly knit communities or cliques in the network.
 
 {: .text-justify} 
@@ -92,9 +92,10 @@ Centrality measurements seem to be skewed towards the lower end of their respect
 
 Do you think you would intuitively optimize for any of these measurements to reach your target? 
 
-While evaluating whether a player optimized for any of these measurements out of his free will is beyond the scope of our narrow data oriented minds, we can look at whether or not players tended to choose paths that favored some of the network characteristics over another. 
+While evaluating whether a player optimized for any of these measurements out of his free will is beyond the scope of our narrow data oriented minds, we can look at whether or not players tended to choose paths that favored some network characteristics over others.
 
-Overall, the centrality distribution of all articles the players go through in the game is similar to the distribution of the distribution of all articles. 
+Overall, the distribution of article centrality in the network is similar to the distribution of article centrality on player paths.
+
 However, we also see that the most frequented nodes (or hubs) by players have higher centrality values on average, as expected (and even more so for closeness centrality). That stands true whether the game is finished or not, though hubs in finished paths have slightly higher average centrality measures. It thus seems like the players are following some logical paths in the Wikipedia network and actively seek to find hubs.
 
 
@@ -105,11 +106,13 @@ However, we also see that the most frequented nodes (or hubs) by players have hi
 ### Part 3 - Wikipedia Category Preferences
 
 
-However, we really want to see how wikipedia’s architecture might be influencing our players, it might be more interesting to look at whether Wikipedia’s category organization could have any influence on these network characteristics:
+However, if we really want to see how Wikipedia’s architecture might be influencing our players, it might be more interesting to look at whether Wikipedia’s category organization could have any influence on these network characteristics:
+
 
 {% include nodes_edges.html %}
 
-We look at the total number of categories (nodes) in each category as well as the number of connections between them (Edges)
+ We look at the total number of articles (nodes) in each category as well as the number of connections between them (Edges).
+
 
 {% include clust_density.html %}
 
@@ -128,7 +131,7 @@ Enter Regression...
 ## Finding information on wikipedia: a game of strategy, good architecture or mere luck?
 ### Part1 - What the articles say 
 
-Simply observing player behavior on Wikispeedia has led to a few intriguing results so far, but we still have little insight on whether winners of Wikipedia are simply skilled at finding information, whether Wikipedia is simply well built for human wayfinding or if a player’s results are simply random.
+Simply observing player behaviors on Wikispeedia has led to a few intriguing results so far, but we still have little insight on whether winners of Wikipedia are simply skilled at finding information, whether Wikipedia is simply well built for human wayfinding or if a player’s results are simply random.
 
 Here we need to introduce regression models which will allow us to move beyond just describing patterns in data to actually understanding the relationships between different factors. Imagine you're a detective trying to figure out what influences the outcome of a case. You could simply observe and note down what you see, which is akin to the observational analysis we’ve done so far. However, if you want to get to the bottom of how different clues or factors interplay to affect the outcome, you need a more sophisticated approach—this is where regression models come into play.
 
@@ -140,7 +143,8 @@ Furthermore, because we have two things we want to understand—whether people c
 
 The way we determine the significance of our article features with regards to whether they affect the average duration of a run and its completion is through p-values - a low p-value (p < 0.05) means you should be surprised by your experiment because your results aren’t occurring by random chance!
 
-At first glance the article’s length, its average input output link ratio and the position of hyperlinks within  them all seem to significantly affect both the average duration of player runs as well as whether or not the runs were completed (except for the average position in the case of completion where p = 0.764). However, for both of these models, we note very low r-squared values (0.002 for feature effects on completion and 0.001 for feature effects on average duration of a run), a statistical measure of how much variance can be explained by the features we are evaluating; in other words, our first test is rather inconclusive… 
+At first glance, the article’s length, its average input output link ratio and the position of hyperlinks within  them all seem to significantly affect both the average duration of player runs as well as whether or not the runs were completed (except for the average position in the case of completion where p = 0.764). However, for both of these models, we note very low r-squared values (0.002 for feature effects on completion and 0.001 for feature effects on average duration of a run), a statistical measure of how much variance can be explained by the features we are evaluating; in other words, our first test is rather uninformative…
+
 
 The lengths, position of hyperlinks and ratio of input/output links of articles chosen are not very useful in explaining why a player is good and efficient at playing Wikispeedia.
 
