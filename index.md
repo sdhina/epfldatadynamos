@@ -167,7 +167,7 @@ If we look at the influence of categories (assigned by Wikipedia’s creators) a
 
 However, this might not be the full story, because if paths in the same category tend to be shorter than paths that run through several categories (because categories are denser), then the increased performance observed when looking at paths which have their source and target in the same category may be do to a random effect - the shortest path between a source and its target. 
 
-To assess this, we introduce a mixed effects models, which are interpreted like linear regressions only this time we have a random effect (shortest path) to control for the influence of categories on performance. 
+To assess this, we again work with a linear regression model but attempt to control for the shortest paths as a confound to see if categories really have an influence on performance. 
 
 More precisely, we add the shortest path variable to a model looking at the effect of closeness hubs in cases where the source and target are in the same category, or not in the same category, on both completion and average duration. Note that the closeness hubs in path variables is defined as a percentage of closeness hubs across nodes in a player path.
 
@@ -188,14 +188,14 @@ If we look further into the effect of whether to include hub percentages in the 
 We’ve spread ourselves far and large across Wikipedia features and statistical techniques to try and understand if player choices and wikipedia’s organization had anything to do at all with how they could target information on Wikipedia.
 
 Here’s what we saw:
-* Articles: tend to have more inputs than outputs, be shorter, and have most of their links towards the top, and players that choose to go deeper into articles tend to do better than average.
-* Network Characteristics: centrality measurements show that few articles have high centralities except for closeness which is more uniformly distributed. Players seem to opt for higher centrality measurements and more so still for closeness centrality.
-* Categories: categories are denser and better clustered than the general network.
+* **Articles**: tend to have more inputs than outputs, be shorter, and have most of their links towards the top, and players that choose to go deeper into articles tend to do better than average.
+* **Network** Characteristics: centrality measurements show that few articles have high centralities except for closeness which is more uniformly distributed. Players seem to opt for higher centrality measurements and more so still for closeness centrality.
+* **Categories**: categories are denser and better clustered than the general network.
 
 Here’s what we tested:
-* Articles: article length and the input/ouptut ratio of articles on a player’s path both affect the path’s completion while all of length, position of links and input/output ratio of articles affect path duration for completed paths.
-* Network Characteristics: all types of hub centrality measurements affect path completion and average duration of runs with closeness centrality affecting performance the most.
-* Categories: categories have very little effect on the performance of players and are only more effective when the path between source and target within them is short; this is a random effect of Wikipedia’s organization.
+* **Articles**: article length and the input/ouptut ratio of articles on a player’s path both affect the path’s completion while all of length, position of links and input/output ratio of articles affect path duration for completed paths.
+* **Network Characteristics**: all types of hub centrality measurements affect path completion and average duration of runs with closeness centrality affecting performance the most.
+* **Categories**: categories have very little effect on the performance of players and are only more effective when the path between source and target within them is short; this is a random effect of Wikipedia’s organization.
 
 However, we found low r-squared values for all of our tests, meaning that the features we looked at are only a very small reason why player’s did well. In other words, after all of this, we’re almost back at square one, with no real good reason to explain why some players are better than others at Wikispeedia and no good suggestions to improve Wikipedia really either…
 
